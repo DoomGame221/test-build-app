@@ -19,7 +19,7 @@ jobs:
         scripts/build-apk.sh
     - name: Rename APK
       run: |
-         mv srceng-mod-launcher/build/android/mod-signed.apk mod-release.apk
+         mv test-build-app/build/android/mod-signed.apk mod-release.apk
     - name: 'Upload Artifact'
       uses: actions/upload-artifact@v4
       with:
