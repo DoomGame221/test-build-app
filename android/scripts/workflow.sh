@@ -11,7 +11,7 @@ build()
 	cd $PW
 }
 
-RES=res/values/build_info.xml
+RES=android/res/values/build_info.xml
 generate_resources()
 {
 	echo '<?xml version="1.0" encoding="utf-8"?>' > $RES
