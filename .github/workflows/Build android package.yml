@@ -28,7 +28,7 @@ jobs:
         DEPLOY_BRANCH: srceng-old-port
         COMMIT: ${{ github.sha }}
       run: |
-        scripts/workflow.sh
+        android/scripts/workflow.sh
         
     - name: 'Upload Artifact'
       uses: actions/upload-artifact@v4
