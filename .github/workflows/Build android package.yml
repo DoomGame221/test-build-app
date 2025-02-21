@@ -1,11 +1,7 @@
 name: Build android package
 
-#on:
-#  workflow_dispatch:
-
 on:
-  push:
-   branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -32,7 +28,7 @@ jobs:
         DEPLOY_BRANCH: srceng-old-port
         COMMIT: ${{ github.sha }}
       run: |
-        android/scripts/workflow.sh
+        scripts/workflow.sh
         
     - name: 'Upload Artifact'
       uses: actions/upload-artifact@v4
